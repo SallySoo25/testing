@@ -1,0 +1,175 @@
+﻿Test Case ID,Test Case Description,Role,Steps,Expected Result,Actual Result,Status
+TC. 01,Log In with valid information,All,"1. Open Log In page
+2. Enter a valid username and password
+3. Select the correct role
+4. Click ""Log In""",User successfully go to their role-specific dashboard.,,
+TC. 02,Verify role access control,All,"1. Open Log In page
+2. Enter a valid username and password
+3. Select the incorrect role
+4. Click Log In","Show ""Invalid Username, Password and Role""",,
+TC. 03,Log In with invalid information,All,"1. Open Log In page
+2. Enter invalid username and password
+3. Select any role
+4. Click Log In","Show ""Invalid Username, Password and Role""",,
+TC. 04,Add new VSE,Admin,"1. Log in as admin
+2. Go to ""Registration""
+3. Click ""Register VSE""
+4. Fill all the field
+5. Click ""Register Company""",Company registered successfully,,
+TC. 05,Add new Manager,Admin,"1. Log in as admin
+2. Go to ""Registration""
+3. Click ""Register Manager""
+4. Fill all the field
+5. Click ""Register Manager""",Manager registered successfully,,
+TC. 06,Add new Consultant,Admin,"1. Log in as admin
+2. Go to ""Registration""
+3. Click ""Register Consultant""
+4. Fill all the field
+5. Click ""Register Consultant""",Consultant registered successfully,,
+TC. 07,Verify only initial admin can add new Admin,Initial Admin,"1. Log in as initial admin
+2. Go to ""Registration""
+3. Click ""Register Admin""
+4. Fill all the field
+5. Click ""Register Admin""",Admin registered successfully,,
+TC. 08,Edit user info,Admin,"1. Log in as admin
+2. View all users at home page
+3. Click ""Edit""
+4. Edit information
+5. Click ""Save""",User updated successfully,,
+TC. 09,Add new component successfully,Admin,"1. Log in as admin
+2. Go to ""Component Settings""
+3. Fill the required field
+4. Click ""Create""",Component created,,
+TC. 10,Edit component data,Admin,"1. Log in as admin
+2. Go to ""Component Settings""
+3. Scroll down to see ""Component List""
+4. Click ""Edit""
+5. Edit information
+6. Click ""Update""",Component updated,,
+TC. 11,Delete component,Admin,"1. Log in as admin
+2. Go to ""Component Settings""
+3. Scroll down to see ""Component List""
+4. Click ""Delete""",Component deleted,,
+TC. 12,Add new project as mandatory,VSE,"1. Log in as VSE
+2. Click on username at home page
+3. Click ""Add Project""
+4. Fill all the field
+5. Click ""Create""",New project created and components seeded. No project cannot access to Work Process,,
+TC. 13,Add project successfully,VSE,"1. Log in as VSE
+2. Click on username at home page
+3. Click ""Add Project""
+4. Fill all the field
+5. Click ""Create""",New project created and components seeded.,,
+TC. 14,Request termination,VSE,"1. Log in as VSE
+2. Go to ""Termination""
+3. Choose the project and fill the form
+4. Click ""Submit Request""",Termination request submitted. Waiting for consultant approval.,,
+TC. 15,Approve termination,Consultant,"1. Log in as consultant
+2. Go to ""Termination""
+3. Click ""Open"" on pending project
+4. Click ""Approve""
+5. Click ""OK""",Decision saved: Approved.,,
+TC. 16,Termination successful,VSE,"1. Log in as VSE
+2. Go to ""Termination""
+3. Check at Your Requests list",Notification / Show Approved in Termination page,,
+TC. 17,Seed only Work Products for VSE,VSE,"1. Log in as VSE
+2. Add project
+3. Go to ""Work Process""",Appears only the list of Work Products in the Work Process,,
+TC. 18,Submit Work Product successfully,VSE,"1. Log in as VSE
+2. Go to ""Work Process""
+3. Choose Work Product
+4. Upload file
+5. Click ""Submit""",Submitted successfully,,
+TC. 19,Overall rating status sum-up automatically (N/P/L/C),System,"1. Log in as consultant
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose Work Product
+5. Rate Characteristics
+6. Click ""Submit""",Overall rating show the sum up rating value of characteristics,,
+TC. 20,Add feedback,Consultant,"1. Log in as consultant
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose Work Product
+5. Write feedback in ""Feedback"" field
+6. Click ""Submit""",Feedback show in VSE report,,
+TC. 21,Verify state appears on rating page as checklist,Consultant,"1. Log in as consultant
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose Work Product
+5. Check ""State"" card",All states appear as checklist boxes,,
+TC. 22,Check state for each WP,Consultant,"1. Log in as consultant
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose Work Product
+5. Tick checklist boxes at ""State"" card
+6. Click ""State""",Save the checked state,,
+TC. 23,Verify characteristics appears on rating page as rating row,Consultant,"1. Log in as consultant
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose Work Product
+5. Check ""Characteristics (N/P/L/C)"" card",All characteristics appear with each rating options,,
+TC. 24,Rate characteristics successfully,Consultant,"1. Log in as consultant
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose Work Product
+5. Rate Characteristics
+6. Click ""Submit""",Auto Rating updated and Rating Status changed,,
+TC. 25,Update the existing rating,Consultant,"1. Log in as consultant
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose Work Product that rated
+5. Change rating of Characteristics
+6. Click ""Submit""",Auto Rating updated and Rating Status changed,,
+TC. 26,Base Practices rating automatically applied based on Work Products rating,System,"1. Rate related Work Products as consultant
+2. Check related Base Practices","BP Auto Rating updated, and Rating Status changed",,
+TC. 27,Add rework deadline for P and L rating,Consultant,"1. Log in as consultant
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose Work Product
+5. Rate Work Products as P or L
+6. Select new deadline date
+7. Click ""Submit""",Deadline Date changed,,
+TC. 28,Notify consultant of VSE submission,System,"1. Log in as consultant
+2. Go to ""Home""",Red dot appear at notification tab on home page,,
+TC. 29,Notify VSE of consultant rating,System,"1. Log in as VSE
+2. Go to ""Home""",Red dot appear at notification tab on home page,,
+TC. 30,Show assigned consultants progress only,Manager,"1. Log in as Manager
+2. Go to ""Consultant""",Appears the progress of assigned consultant to this manager,,
+TC. 31,Show assigned VSEs progress only,Manager,"1. Log in as Manager
+2. Go to ""VSEs""",Appears the progress of VSE under assigned consultant of this manager,,
+TC. 32,Show all the project of VSE in VSE progress,Manager,"1. Log in as Manager
+2. Go to ""VSEs""
+3. Choose VSE",Appears the list of all the projects,,
+TC. 33,"Show only ""In Progress"" project of VSE in consultant progress",Manager,"1. Log in as Manager
+2. Go to ""Consultant""
+3. Choose consultant
+4. Click chosen VSE",Appears current In Progress project of VSE in consultant progress page,,
+TC. 34,Show only Work Products in VSE progress,Manager,"1. Log in as Manager
+2. Go to ""VSEs""
+3. Choose VSE
+4. Choose project
+5. Click ""Open""",Appears only Work Products progress in VSE progress,,
+TC. 35,Show all Base Practices and Work Products in consultant progress,Manager,"1. Log in as Manager
+2. Go to ""Consultant""
+3. Choose consultant
+4. Click chosen VSE",Appears all Base Practices and Work Products progress in consultant progress,,
+TC. 36,Provide report of latest submission only,VSE,"1. Log in as VSE
+2. Go to ""Reports and Results""
+3. Click on Work product",Access only to the report of last submission,,
+TC. 37,Save all the documents of each Work Products,Consultant,"1. Log in as consultant
+2. Choose VSE
+3. Go to ""Documents and Records""
+4. Select project
+5. Click on Work Product",All the documents display in document page,,
+TC. 38,Add record,Consultant,"1. Log in as consultant
+2. Choose VSE
+3. Go to ""Documents and Records""
+4. Click ""Records""
+5. Fill the fields
+6. Click ""Save record""",Record saved,,
+TC. 39,View all the added record,Consultant,"1. Log in as consultant
+2. Choose VSE
+3. Go to ""Documents and Records""
+4. Click ""Records""",All records display with date,,
+TC. 40,Seed all Base Practices and Work Products to consultant's work process,System,"1. Log in as consultant
+2. Choose VSEs",Appears the list of Work Products and Base Practices in the Work Process,,
