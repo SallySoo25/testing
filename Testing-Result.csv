@@ -1,0 +1,21 @@
+User Group,Expert/Staff No.,Role Tested,Qualitative Test Results,Check whether you have this function?
+Expert Group A,Expert 1,Manager,Dashboard shows accurate progress for all assigned consultants.,Add a summary chart (Pie/Bar) for a quicker overview of progress.
+Expert Group A,Expert 2,Manager,VSE project list under each consultant is displayed correctly.,Add a filter to view only Overdue or Delayed projects.
+Expert Group A,Expert 3,Manager,Access control works; Managers can only see their assigned teams.,Provide an Export to PDF button for progress reports.
+Expert Group A,Expert 4,Manager,Work Product progress within VSE projects is visible and clear.,Suggested adding a Last Update timestamp for each project.
+Expert Group A,Expert 5,Manager,Consultant-specific progress views provide deep insight into project status.,Implement a Compare feature to see performance across different teams.
+Expert Group B,Expert 6,Consultant,N/P/L/C rating formulas are computationally correct.,Add a Draft Save button before final submission of ratings.
+Expert Group B,Expert 7,Consultant,Automated Base Practice ratings sync perfectly with Work Products.,Highlight the Base Practices that were auto-updated for better visibility.
+Expert Group B,Expert 8,Consultant,Feedback system allows clear communication with VSEs.,-
+Expert Group B,Expert 9,Consultant,Termination approval workflow is logical and fast.,Notify the consultant via the dashboard when a new termination is requested.
+Expert Group B,Expert 10,Consultant,Rework deadline feature for P and L ratings is functional.,Show the remaining days until the deadline on the consultant's view.
+Staff Group A,Staff 1,Admin,Registering new VSEs and Managers is smooth and error-free.,Add a Search function in the User List for faster management.
+Staff Group A,Staff 2,Admin,Admin can register and manage Consultants and other Admins.,Provide a confirmation popup before deleting any user profile.
+Staff Group A,Staff 3,Admin,Component creation (Add/Edit/Delete) works as expected.,UI labels in Component Settings could be more descriptive for new staff.
+Staff Group A,Staff 4,Admin,Access control prevents staff from using unauthorized functions.,Add a System Log to track who added or deleted specific components.
+Staff Group A,Staff 5,Admin,User information updates are saved instantly in the database.,Allow Admin to reset user passwords directly from the Edit page.
+Staff Group B,Staff 6,VSE,The mandatory project creation successfully guides users to the Work Process.,Add a Progress Bar on the home page to show overall project completion.
+Staff Group B,Staff 7,VSE,Uploading Work Products is simple and the latest reports are easily accessible.,Support more file formats and increase the file size limit for large documents.
+Staff Group B,Staff 8,VSE,Termination request workflow is clear and the status update is visible.,Add an Undo button in case a request was submitted by mistake.
+Staff Group B,Staff 9,VSE,Notifications (Red Dot) effectively alert users of new consultant ratings.,-
+Staff Group B,Staff 10,VSE,Role-based access ensures VSEs only see relevant Work Products.,-
